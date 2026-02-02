@@ -62,113 +62,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*全体の設定
----------------------------------------------------------------------------*/
-
-
-
-body {
-  color: #383e45;
-  font-size: 0.9rem;
-  font-family:"Helvetica";
-}
-
-li {
-  list-style: none;
-  float: left;
- padding: 33px 20px;
-}
-
- a {
-  text-decoration: none;
-}
-
-
-
-.header {
-  position: fixed; 
-  background-color: rgba(255, 255, 255, 0.5); 
-  color: #fff;
-  height: 80px;
-  width: 100%;
-  z-index: 1; /* 画像より手前に表示 */
-  
-}
-
-.header-logo {
-  float: left;
-  font-size: 36px;
- padding: 20px 40px; 
-  
-}
-
-
-.header-list {
-display: flex;					/*flexボックスを使う指定*/
-justify-content: flex-end;
-
-}
-
-.main {
-  background-color: #bdf7f1;
-  height: 600px;
-}
-
-
-.content {
-  text-align: center;
-  padding-top: 120px; 
-  
-}
-
-.content ul{
- display: flex;
- justify-content: space-around;
-}
-
-
-
-img {
-display: flex;
-gap: 10px;
-padding: 10px 0;
-max-width: 400px;
-margin: 0 auto;
-  }
-
-
-  li {
-  list-style: none;
-  
-  
-}
-
-
-.content-title {
-  text-align: center;
-}
-
-
-
-
-
-
-
 /*全体の設定
 ---------------------------------------------------------------------------*/
 html,body {
@@ -202,18 +95,11 @@ nav {margin: 0;padding: 0;}
 /*table全般の設定*/
 table {border-collapse:collapse;}
 
+/*画像全般の設定*/
+img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
 
-
-
-
-
-
-
-
-
-
-
-
+/*videoタグ*/
+video {max-width: 100%;}
 
 /*iframeタグ*/
 iframe {width: 100%;}
@@ -327,7 +213,7 @@ header #logo {
 	width: 70%;	/*画面の半分だけに配置*/
 	height: 105%;
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);	/*切り抜く形。左上,右上,右下,左下の順番で、それぞれ2つセットになっている数字はX軸 Y軸の順番。基点は左上(0 0)。*/
-	background: url('../images/インド手最後.png') no-repeat center center / cover;	/*背景画像を読み込む指定*/
+	background: url('..images/インド手最後.png') no-repeat center center / cover;	/*背景画像を読み込む指定*/
 }
 
 	/*画面のアスペクト比が1:2以下の場合の追加設定*/
@@ -776,3 +662,26 @@ animationの行の「0.1s」が文字の出現のなめらかさで、大きい�
 
 
 
+ #sukiru ul {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  list-style: none;
+}
+#sukiru li {
+  width: 200%;
+  text-align: center;
+}
+
+ #sukiru img {
+  width: 30%;
+ }
+
+ .t-s {
+  display: flex;
+  width: 1200px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+}
+  
