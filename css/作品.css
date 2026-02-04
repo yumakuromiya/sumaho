@@ -96,7 +96,7 @@ nav {margin: 0;padding: 0;}
 table {border-collapse:collapse;}
 
 /*画像全般の設定*/
-img {border: none;max-width: 70%;height: auto;vertical-align: middle;}
+img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
 
 /*videoタグ*/
 video {max-width: 100%;}
@@ -684,4 +684,3 @@ animationの行の「0.1s」が文字の出現のなめらかさで、大きい�
   align-items: center;
   justify-content: center;
 }
-  
