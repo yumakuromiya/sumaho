@@ -662,25 +662,11 @@ animationの行の「0.1s」が文字の出現のなめらかさで、大きい�
 
 
 
- #sukiru ul {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  list-style: none;
-}
-#sukiru li {
-  width: 200%;
-  text-align: center;
-}
 
- #sukiru img {
-  width: 30%;
- }
 
- .t-s {
-  display: flex;
-  width: 1200px;
-  height: 200px;
-  align-items: center;
-  justify-content: center;
+
+
+
+{
+    background-color:#dcdcdc;
 }
