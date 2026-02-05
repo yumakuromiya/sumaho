@@ -401,7 +401,7 @@ ul.icons li {
 /*listブロックを囲む外側のボックス*/
 .list-grid-trimming {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);	/*ここの「4」の数字が横に並べる数です。3列がいいなら(3, 1fr)です。*/
+	grid-template-columns: repeat(2, 1fr);	/*ここの「4」の数字が横に並べる数です。3列がいいなら(3, 1fr)です。*/
 	gap: 1rem;	/*マージン的な数値。サムネイル間を１文字分あけます。*/
 }
 
