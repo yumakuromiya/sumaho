@@ -27,7 +27,7 @@
 @import url("inview.css");
 
 
-　/*CSSカスタムプロパティ（サイト全体を一括管理する為の設定）
+/*CSSカスタムプロパティ（サイト全体を一括管理する為の設定）
 ---------------------------------------------------------------------------*/
 :root {
 	--primary-color: #a1a1a1;		/*テンプレートのメインとなる色*/
@@ -401,7 +401,7 @@ ul.icons li {
 /*listブロックを囲む外側のボックス*/
 .list-grid-trimming {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);	/*ここの「4」の数字が横に並べる数です。3列がいいなら(3, 1fr)です。*/
+	grid-template-columns: repeat(3, 1fr);	/*ここの「4」の数字が横に並べる数です。3列がいいなら(3, 1fr)です。*/
 	gap: 1rem;	/*マージン的な数値。サムネイル間を１文字分あけます。*/
 }
 
@@ -662,11 +662,25 @@ animationの行の「0.1s」が文字の出現のなめらかさで、大きい�
 
 
 
+ #sukiru ul {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  list-style: none;
+}
+#sukiru li {
+  width: 200%;
+  text-align: center;
+}
 
+ #sukiru img {
+  width: 30%;
+ }
 
-
-
-
-.boby {
-    background-color:#a9a9a9
+ .t-s {
+  display: flex;
+  width: 1200px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
 }
