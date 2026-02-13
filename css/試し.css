@@ -96,7 +96,7 @@ nav {margin: 0;padding: 0;}
 table {border-collapse:collapse;}
 
 /*画像全般の設定*/
-img {border: none;max-width: 60%;height: auto;vertical-align: middle;}
+img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
 
 /*videoタグ*/
 video {max-width: 100%;}
@@ -523,6 +523,14 @@ ul.icons li {
     visibility: hidden;
 }
 
+/* アニメーションを適用するクラス。
+animationの行の「0.1s」が文字の出現のなめらかさで、大きいほどなめらかに出てきます。現状0.1ですが、0.5など大きくするとなめらかに出てきます。
+１文字ずつの出現する際の時差は、js/main.jsの「テキストのフェードイン効果」の中にある「0.1」で調整できます。*/
+.char {
+    display: inline-block;
+    opacity: 0;
+    animation: fadeIn 0.1s linear both;
+}
 
 
 /*アニメーションボタン。（枠線をぐるっとなぞるアニメーション）
@@ -654,4 +662,25 @@ ul.icons li {
 
 
 
- 
+ #sukiru ul {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  list-style: none;
+}
+#sukiru li {
+  width: 200%;
+  text-align: center;
+}
+
+ #sukiru img {
+  width: 30%;
+ }
+
+ .t-s {
+  display: flex;
+  width: 1200px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+}
